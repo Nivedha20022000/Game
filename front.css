@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(circle,#00FFFF,#000080);
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.front-page-container {
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+}
+
+.player-options {
+    margin-bottom: 20px;
+    color: #ff1493	;
+}
+
+label {
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+select {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 20px;
+     background-color: #ffb6c1;
+    padding: 5px;
+}
+
+button {
+    font-size: 25px;
+    font-family: "Lucida Handwriting", cursive;
+    cursor: pointer;
+    background-color: #ba55d3	;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}

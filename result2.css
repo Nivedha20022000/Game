@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+     font-family: "Lucida Handwriting", cursive;
+    background: linear-gradient(to right, #00FFFF, #f0f8ff	);
+    color: #333;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff0000;
+ font-size: 50px;
+   }
+h2 {
+    color: #000000;
+font-size: 40px;
+   }
+.result-container {
+    margin-top: 50px;
+    font-size: 30px;
+ color:#8b008b;
+}
+/* Level Button styles */
+#levelButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #00008b; 
+    color: white;
+}
+
+#levelButton:hover {
+    background-color:#ff1493; /* Darker green */
+}

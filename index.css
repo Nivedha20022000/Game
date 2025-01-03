@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#000000; /* Set the background color for the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    font-family: "Lucida Handwriting", cursive;
+  background: linear-gradient(to right,#000080	,#FFFFFF);}
+
+
+
+h1 {
+    font-size: 60px;
+    color:#000000;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 25px; /* Adjust font size */
+    color: #000000	; /* Set text color */
+    margin: 10px 0; /* Set top and bottom margin */
+    padding: 20; /* Set padding */
+    line-height: 1.2; /* Set line height */
+}
+
+
+.menu-button {
+    margin-top: 50px;
+}
+
+.menu-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button a:hover {
+    background-color: #FFFFFF;
+}
+
+.gap {
+    height: 50px;
+}
+
+/* Animate the heading */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    animation: fadeIn 1s ease-in-out;
+}

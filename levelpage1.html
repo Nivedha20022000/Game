@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="levelpage2.css">
+   
+    <title>Levels</title>
+</head>
+<body>
+    <div class="levels-page-container">
+        <h1>Choose a Level</h1>
+        <div class="level-buttons">
+            <button onclick="selectLevel('frontpage.html')"> Level 1 Binary</button>
+         <button onclick="selectLevel('secondlevel.html')">Level 2 Find Me</button>
+        <button onclick="selectLevel('thirdlevel.html')">Level 3 Alber</button>
+            
+        </div>
+
+        <div class="gap"></div> <!-- Added a gap between level buttons and Start Game button -->
+
+        <button  onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        let selectedLevel = null;
+
+        function selectLevel(level) {
+            selectedLevel = level;
+            alert("Level " + level.slice(-5, -5) + " selected"); // Adjust this line as needed
+        }
+
+        function startGame() {
+            if (selectedLevel) {
+                window.location.href = selectedLevel;
+            } else {
+                alert("Please select a level first.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="firstlevel.css">
+    <title>BINARY 0...1</title>
+</head>
+<body>
+	
+	<h1>Binary</h1>
+    <div class="game-container">
+        <div id="board" class="board"></div>
+    <br>
+      <th>
+        <button id="resetBtn" class="reset-btn" onclick="resetGame()">Reset Game</button>
+      </th>
+    </br>
+        <div id="timer" class="timer">Time: 0</div>
+        <div id="result" class="result"></div>
+    </div>
+<button id="musicToggleButton" onclick="toggleBackgroundMusic()">Sound</button>
+
+<audio id="backgroundMusic" loop autoplay>
+  <source src="C:\Users\Admin\Documents\game\Sakura-Girl-Daisy-chosic.com_.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  
+    <button onclick="window.location.href = 'levelpage1.html'" class="levels-btn">Levels</button>
+
+<script src="firstlevel.js"></script>
+</body>
+</html>

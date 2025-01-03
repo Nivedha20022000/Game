@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thirdlevel.css">
+    <title>third level level</title>
+</head>
+<body>
+    <h1>Welcome to Alber Game</h1>
+    <div class="game-container">
+        <div id="question" class="question"></div>
+        <input type="text" id="answer" class="answer" placeholder="Enter Alphabet Numbers">
+        <button id="button1" class="checkAnswer" onclick="checkAnswer()">Check Answer</button>
+        <div id="result" class="result"></div>
+    </div>
+        <button id="button2" class="restart-game" onclick="restartGame()">Restart Game</button>
+
+    <div class="timer-container">
+        <button id="button3" class="start-game" onclick="startGame()">Start Timer</button>
+        <div id="timer" class="timer"></div>
+    </div>
+   
+
+    <!-- Modals -->
+    <div id="timeUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTimeUpModal()">&times;</span>
+            <p>Time's Up!</p>
+        </div>
+    </div>
+
+    <div id="emptyAnswerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmptyAnswerModal()">&times;</span>
+            <p>Please enter a value in the text box.</p>
+        </div>
+    </div>
+
+    <!-- New Correct Well Done Modal -->
+    <div id="correctWellDoneModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCorrectWellDoneModal()">&times;</span>
+            <p>Correct! Well done.</p>
+        </div>
+    </div>
+<!-- HTML for the popup -->
+<div id="incorrectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="incorrectMessage"></p>
+  </div>
+</div>
+ 
+   <!-- Congratulation Modal -->
+<div id="congratulationModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCongratulationModal()">&times;</span>
+    <p>Congratulations! Level Completed.</p>
+    <p id="congratulationCorrectCount"></p>
+  </div>
+</div>
+<button onclick="toggleBackgroundMusic()" id="musicToggleButton">Sound</button>
+<audio id="backgroundMusic" loop autoplay>
+    <source src="C:\Users\Admin\Documents\game\Journey(chosic.com).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
+    <script src="thirdlevel.js"></script>
+<!-- Ensure the correct path to result.js -->
+<script src="result.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>second  Level</title>
+  <link rel="stylesheet" href="secondlevel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-container">
+    <h2>welcome To Find Me </h2>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <div class="content">
+    <p class="word" style="display: none;"></p>
+    <div class="details" style="display: none;">
+      <p class="hint">Hint: <span></span></p>
+      <p class="time">Time Left: <span><b>30</b>s</span></p>
+    </div>
+    <input type="text" spellcheck="false" class="input-field" placeholder="Enter a valid word" disabled>
+    <div class="buttons" style="display: none;">
+      <button class="refresh-word" disabled>Refresh Word</button>
+      <button class="check-word" disabled>Check Word</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <p class="popup-message"></p>
+    </div>
+  </div>
+  <audio id="background-music" autoplay loop>
+    <source src="C:\Users\Admin\Documents\game\Sakura-Girl-Motivation-chosic.com_.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="audio-toggle">Sound</button> 
+  <div class="toggle-container"></div>
+
+  <div id="level-completed-popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <p class="popup-message">Level Completed!</p>
+    </div>
+  </div>
+  <button id="level-btn" onclick="redirectToLevelPage()">Level</button>
+
+  <script>
+    function redirectToLevelPage() {
+      window.location.href = 'levelpage1.html';
+    }
+  </script>
+  <script src="secondlevel.js" defer></script>
+</body>
+</html>
